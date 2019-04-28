@@ -1,0 +1,37 @@
+﻿<Window x:Class="IPCamera.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IPCamera"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="461" Width="678">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="413*"/>
+            <ColumnDefinition Width="257*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="PanleShow" HorizontalAlignment="Left" Height="370" Margin="10,31,0,0" VerticalAlignment="Top" Width="403" Grid.RowSpan="2" Loaded="PanleShow_Loaded"/>
+        <Button x:Name="btn_Up" Content="Up" HorizontalAlignment="Left" Margin="93,68,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="19" Grid.Row="1"/>
+        <Button x:Name="btn_down" Content="Down" HorizontalAlignment="Left" Margin="93,167,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="19" Grid.Row="1"/>
+        <Button x:Name="btn_Left" Content="Left" HorizontalAlignment="Left" Margin="17,119,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="19" Grid.Row="1"/>
+        <Button x:Name="btn_right" Content="Right" HorizontalAlignment="Left" Margin="164,119,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="19" Grid.Row="1"/>
+        <Button x:Name="btn_Open" Content="Open" HorizontalAlignment="Left" Margin="93,23,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Open_Click" Grid.Column="1" Height="19" Grid.Row="1"/>
+        <TextBox x:Name="txt_IP" HorizontalAlignment="Left" Height="23" Margin="107,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="107,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <ComboBox x:Name="Comlist" HorizontalAlignment="Left" Margin="107,40,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" Height="21"/>
+        <Label Content="协议：" HorizontalAlignment="Left" Margin="29,36,0,0" VerticalAlignment="Top" Grid.Column="1" Height="25" Width="46"/>
+        <Label Content="IP:" HorizontalAlignment="Left" Margin="29,85,0,0" VerticalAlignment="Top" Grid.Column="1" Height="25" Width="24"/>
+        <Label Content="User" HorizontalAlignment="Left" Margin="29,139,0,0" VerticalAlignment="Top" Grid.Column="1" Height="25" Width="36"/>
+        <TextBox x:Name="txt_user" HorizontalAlignment="Left" Height="23" Margin="107,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label Content="User：" HorizontalAlignment="Left" Margin="29,139,0,0" VerticalAlignment="Top" Grid.Column="1" Height="25" Width="48"/>
+        <TextBox x:Name="txt_Passw" HorizontalAlignment="Left" Height="23" Margin="107,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label Content="Passw：" HorizontalAlignment="Left" Margin="29,185,0,0" VerticalAlignment="Top" Grid.Column="1" Height="25" Width="57"/>
+
+
+    </Grid>
+</Window>
