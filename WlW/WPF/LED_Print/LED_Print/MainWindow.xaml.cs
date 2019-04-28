@@ -34,7 +34,8 @@ namespace LED_Print
         private void ComList1_Loaded(object sender, RoutedEventArgs e)
         {
             //获取串口号
-            foreach (var item in SerialPort.GetPortNames()) {
+            foreach (var item in SerialPort.GetPortNames())
+            {
 
                 this.ComList1.Items.Add(item);
             }
@@ -42,7 +43,8 @@ namespace LED_Print
 
         private void Btn_start1_Click(object sender, RoutedEventArgs e)
         {
-            if (ComList1.SelectedValue == null) {
+            if (ComList1.SelectedValue == null)
+            {
 
                 MessageBox.Show("请选择串口");
                 return;
@@ -50,7 +52,7 @@ namespace LED_Print
             //发送LED字符串
             player = new LEDPlayer(this.ComList1.SelectedItem.ToString());
             MessageBox.Show(player.DisplayText(this.txt_input1.Text));
-            
+
         }
     }
 }
