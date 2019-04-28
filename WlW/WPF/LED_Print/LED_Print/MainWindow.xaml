@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LED_Print"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="LED写屏" Height="315" Width="466.333">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="108*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="245*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="串口号：" HorizontalAlignment="Left" Margin="112,3,0,0" VerticalAlignment="Top" Height="25" Width="58" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Button x:Name="btn_start1" Content="发送" HorizontalAlignment="Left" Margin="162,28,0,0" VerticalAlignment="Top" Width="75" Height="19" Grid.Column="1" Grid.Row="2" Click="Btn_start1_Click"/>
+        <ComboBox x:Name="ComList1" HorizontalAlignment="Left" Margin="76,7,0,0" VerticalAlignment="Top" Width="161" Height="21" Grid.Column="1" Grid.Row="1" Loaded="ComList1_Loaded"/>
+        <TextBox x:Name="txt_input1" HorizontalAlignment="Left" Height="23" Margin="112,24,0,0" TextWrapping="Wrap" Text="HelloWorld" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Row="2"/>
+
     </Grid>
 </Window>
