@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HighFrequencyReadCard"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="402" Width="535" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="109*"/>
+            <RowDefinition Height="72*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="94*"/>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="26*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_search" Content="寻卡" HorizontalAlignment="Left" Margin="5,50,0,0" VerticalAlignment="Top" Width="75" Height="19" Grid.Column="1" Click="Btn_search_Click"/>
+        <Button x:Name="btn_yanzhen" Content="验证" HorizontalAlignment="Left" Margin="5,54,0,0" VerticalAlignment="Top" Width="75" Height="19" Grid.Row="1" Grid.Column="1" Click="Btn_yanzhen_Click"/>
+        <Button x:Name="btn_read" Content="读取" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="75" Height="19" Grid.Row="3" Grid.Column="1" Click="Btn_read_Click"/>
+        <Button x:Name="btn_close" Content="关闭" HorizontalAlignment="Left" Margin="5,13,0,0" VerticalAlignment="Top" Width="75" Height="19" Grid.Row="4" Grid.Column="1" Click="Btn_close_Click"/>
+        <Button x:Name="btn_" Content="写入" HorizontalAlignment="Left" Margin="5,64,0,0" VerticalAlignment="Top" Width="75" Height="19" Grid.Row="3" Grid.Column="1" Click="Btn__Click"/>
+        <ListBox x:Name="listbox" HorizontalAlignment="Left" Height="169" Margin="10,50,0,0" VerticalAlignment="Top" Width="321" Grid.Column="2" Grid.RowSpan="4"/>
+        <TextBox x:Name="txt_input" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,64,0,0" TextWrapping="Wrap" Text="HelloWorld" VerticalAlignment="Top" Width="123" Grid.Row="3"/>
+        <Label x:Name="txt_show" Content="连接失败！" Grid.Column="2" HorizontalAlignment="Left" Margin="304,47,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Row="4" Height="25" Width="69"/>
+        <Label Content="扇形区：" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="25" Width="65"/>
+        <ComboBox x:Name="comlist" Grid.Column="2" HorizontalAlignment="Left" Margin="64,10,0,0" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
