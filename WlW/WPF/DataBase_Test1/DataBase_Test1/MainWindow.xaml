@@ -8,7 +8,7 @@
         Title="MainWindow" Height="438.732" Width="754.225">
     <Grid Margin="0,0,2,0">
         <Button x:Name="button" Content="查询" HorizontalAlignment="Left" Margin="552,35,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Button x:Name="button_Copy" Content="删除" HorizontalAlignment="Left" Margin="552,90,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_delete" Content="删除" HorizontalAlignment="Left" Margin="552,90,0,0" VerticalAlignment="Top" Width="75" Click="Btn_delete_Click"/>
         <TextBox x:Name="txt_insert" HorizontalAlignment="Left" Height="23" Margin="205,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="325"/>
         <Button x:Name="btn_insert" Content="插入" HorizontalAlignment="Left" Margin="552,320,0,0" VerticalAlignment="Top" Width="75" Click="btn_insert_Click"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="259" Margin="205,35,0,0" VerticalAlignment="Top" Width="325"/>
