@@ -1,0 +1,15 @@
+﻿<Window x:Class="ADAM4150.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ADAM4150"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="398.988" Width="615.081" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="串口号：" HorizontalAlignment="Left" Margin="172,28,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Comlist" HorizontalAlignment="Left" Margin="233,29,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_start" Content="获取" HorizontalAlignment="Left" Margin="382,31,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

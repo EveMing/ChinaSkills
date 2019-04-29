@@ -54,7 +54,7 @@ namespace IPCamera
                 //string connStr = this.Comlist.SelectedItem.ToString() + "://" + this.txt_IP.Text + ":80/videostream.cgi?loginuse=" + this.txt_user.Text + "&loginpas=" + this.txt_Passw.Text;
                 camera.Open(string.Format("htttp://{0}:{1}/videostream.cgi?loginuse={2}&loginpas={3}", this.txt_IP.Text, "80",this.txt_user.Text ,this.txt_Passw.Text));
                 
-       
+                //未完
 
             }
 }
