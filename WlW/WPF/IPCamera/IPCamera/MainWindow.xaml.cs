@@ -43,24 +43,20 @@ namespace IPCamera
             
             if (this.Comlist.SelectedItem.ToString() == "rtsp")
             {
-                string connStr = this.Comlist.SelectedItem.ToString() + "://" + this.txt_user.Text + ":" + this.txt_Passw.Text + "@" + this.txt_IP.Text + "/11";
-                camera.Open(connStr);
+                //string connStr = this.Comlist.SelectedItem.ToString() + "://" + this.txt_user.Text + ":" + this.txt_Passw.Text + "@" + this.txt_IP.Text + "/11";
+                camera.Open(string.Format("rtsp://{0}:{1}@{2}/{3}", this.txt_user.Text, this.txt_Passw, this.txt_IP.Text, "11"));
 
                 return;
             }
             else
             {
                 MessageBox.Show("http");
-                string connStr = this.Comlist.SelectedItem.ToString() + "://" + this.txt_IP.Text + ":80/videostream.cgi?loginuse=" + this.txt_user.Text + "&loginpas=" + this.txt_Passw.Text;
-                camera.Open(connStr);
+                //string connStr = this.Comlist.SelectedItem.ToString() + "://" + this.txt_IP.Text + ":80/videostream.cgi?loginuse=" + this.txt_user.Text + "&loginpas=" + this.txt_Passw.Text;
+                camera.Open(string.Format("htttp://{0}:{1}/videostream.cgi?loginuse={2}&loginpas={3}", this.txt_IP.Text, "80",this.txt_user.Text ,this.txt_Passw.Text));
+                
+       
 
             }
-
-            
-
-
-        }
-
-
+}
     }
 }
