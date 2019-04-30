@@ -18,10 +18,10 @@
         <Label Content="火焰：" HorizontalAlignment="Left" Margin="32,55,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
         <Label Content="红外对射：" HorizontalAlignment="Left" Margin="32,98,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
         <Label Content="人体红外：" HorizontalAlignment="Left" Margin="32,144,0,-3" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
-        <Label x:Name="lab_smoke" Content="N/A" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
-        <Label x:Name="lab_fire" Content="N/A" HorizontalAlignment="Left" Margin="153,55,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
-        <Label x:Name="lab_infrared" Content="N/A" HorizontalAlignment="Left" Margin="153,98,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
-        <Label x:Name="lab_humanbody" Content="N/A" HorizontalAlignment="Left" Margin="153,144,0,-3" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
+        <Label x:Name="lab_smoke" Content="N/A" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="77"/>
+        <Label x:Name="lab_fire" Content="N/A" HorizontalAlignment="Left" Margin="153,55,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="77"/>
+        <Label x:Name="lab_infrared" Content="N/A" HorizontalAlignment="Left" Margin="153,98,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="77"/>
+        <Label x:Name="lab_humanbody" Content="N/A" HorizontalAlignment="Left" Margin="153,144,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="77"/>
         <Label Content="灯泡1：" HorizontalAlignment="Left" Margin="313,38,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
         <Label Content="报警灯：" HorizontalAlignment="Left" Margin="313,83,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
         <Label Content="风扇：" HorizontalAlignment="Left" Margin="313,126,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
