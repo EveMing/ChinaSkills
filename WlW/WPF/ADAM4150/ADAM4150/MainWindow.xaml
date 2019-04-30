@@ -5,11 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ADAM4150"
         mc:Ignorable="d"
-        Title="MainWindow" Height="398.988" Width="615.081" Loaded="Window_Loaded">
+        Title="ADAM4150" Height="311.988" Width="596.081" Loaded="Window_Loaded">
     <Grid>
-        <Label Content="串口号：" HorizontalAlignment="Left" Margin="172,28,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="Comlist" HorizontalAlignment="Left" Margin="233,29,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btn_start" Content="获取" HorizontalAlignment="Left" Margin="382,31,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="166*"/>
+        </Grid.RowDefinitions>
+        <Label Content="串口号：" HorizontalAlignment="Left" Margin="172,28,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
+        <ComboBox x:Name="Comlist" HorizontalAlignment="Left" Margin="233,29,0,0" VerticalAlignment="Top" Width="120" Height="21"/>
+        <Button x:Name="btn_start" Content="获取" HorizontalAlignment="Left" Margin="382,31,0,0" VerticalAlignment="Top" Width="75" Height="19" Click="Btn_start_Click"/>
+        <Label Content="烟雾：" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
+        <Label Content="火焰：" HorizontalAlignment="Left" Margin="32,55,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
+        <Label Content="红外对射：" HorizontalAlignment="Left" Margin="32,98,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
+        <Label Content="人体红外：" HorizontalAlignment="Left" Margin="32,144,0,-3" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
+        <Label x:Name="lab_smoke" Content="N/A" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
+        <Label x:Name="lab_fire" Content="N/A" HorizontalAlignment="Left" Margin="153,55,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
+        <Label x:Name="lab_infrared" Content="N/A" HorizontalAlignment="Left" Margin="153,98,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
+        <Label x:Name="lab_humanbody" Content="N/A" HorizontalAlignment="Left" Margin="153,144,0,-3" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="40"/>
+        <Label Content="灯泡1：" HorizontalAlignment="Left" Margin="313,38,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
+        <Label Content="报警灯：" HorizontalAlignment="Left" Margin="313,83,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
+        <Label Content="风扇：" HorizontalAlignment="Left" Margin="313,126,0,0" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="65"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="420,41,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="19"/>
+        <Button x:Name="btn_lamp_police" Content="打开" HorizontalAlignment="Left" Margin="420,86,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="19" Click="Btn_lamp_police_Click"/>
+        <Button x:Name="btn_wind" Content="打开" HorizontalAlignment="Left" Margin="420,129,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="19" Click="Btn_wind_Click"/>
+        <Button x:Name="btn_lamp" Content="打开" HorizontalAlignment="Left" Margin="420,41,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="19" Click="Btn_lamp_Click"/>
 
     </Grid>
 </Window>
