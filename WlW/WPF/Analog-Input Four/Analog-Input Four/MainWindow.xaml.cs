@@ -35,9 +35,9 @@ namespace Analog_Input_Four
             }
         }
 
+        private void Btn_start_Click(object sender, RoutedEventArgs e)
+        {
 
-
-
-
+        }
     }
 }

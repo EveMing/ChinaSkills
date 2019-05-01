@@ -15,7 +15,7 @@
         <Label x:Name="lab_light" Content="N/A" HorizontalAlignment="Left" Margin="169,216,0,0" VerticalAlignment="Top"/>
         <Label Content="串口号：" HorizontalAlignment="Left" Margin="188,19,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="Comlist" HorizontalAlignment="Left" Margin="251,23,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btn_start" Content="获取" HorizontalAlignment="Left" Margin="411,22,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_start" Content="获取" HorizontalAlignment="Left" Margin="411,25,0,0" VerticalAlignment="Top" Width="75" Click="Btn_start_Click"/>
         <Label Content="二氧化碳：" HorizontalAlignment="Left" Margin="58,280,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lab_Carbondioxide" Content="N/A" HorizontalAlignment="Left" Margin="169,280,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lab_windspeed" Content="风速：" HorizontalAlignment="Left" Margin="385,74,0,0" VerticalAlignment="Top"/>
